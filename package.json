@@ -2,6 +2,9 @@
   "name": "activity-backend",
   "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "start": "node src/server.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.4",

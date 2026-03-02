@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const schema = new mongoose.Schema({
-  employeeId: { type: String, unique: true },
+  userId: { type: String, unique: true },
   machineId: String,
   machineName: String,
   registeredAt: { type: Date, default: Date.now }
