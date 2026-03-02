@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const schema = new mongoose.Schema({
   machineId: String,
@@ -9,4 +9,5 @@ const schema = new mongoose.Schema({
   idleSeconds: Number
 }, { timestamps: true });
 
-module.exports = mongoose.model("Activity", schema);
+const Activity= mongoose.model("Activity", schema);
+export default Activity;

@@ -1,6 +1,7 @@
-const router = require("express").Router();
-const { collect } = require("../controllers/activity.controller");
+import express from "express";
+import { collect } from "../controllers/activity.controller.js";
 
+const router=express.Router()
 router.post("/", collect);
 
-module.exports = router;
+ export default router;

@@ -1,6 +1,6 @@
-const Activity = require("../models/activity.model");
+import Activity  from "../models/activity.model.js";
 
-exports.collect = async (req, res) => {
+export const collect = async (req, res) => {
   await Activity.create(req.body);
   res.sendStatus(200);
 };
